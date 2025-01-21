@@ -16,6 +16,9 @@ end
 
 target 'RNBleMubarok' do
   config = use_native_modules!
+  use_frameworks!
+  pod 'react-native-ble-plx', :path => '../node_modules/react-native-ble-plx'
+  pod 'RNCPushNotificationIOS', :path => '../node_modules/@react-native-community/push-notification-ios'
 
   use_react_native!(
     :path => config[:reactNativePath],

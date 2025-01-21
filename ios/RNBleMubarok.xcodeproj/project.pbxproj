@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* RNBleMubarokTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNBleMubarokTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-RNBleMubarok.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RNBleMubarok.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-RNBleMubarok-RNBleMubarokTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNBleMubarok-RNBleMubarokTests.a */; };
+		552D76A28ED89FF2071D3BA6 /* Pods_RNBleMubarok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EB00EC92AB73DBED54FF6E /* Pods_RNBleMubarok.framework */; };
+		77C2E3A4620D6004EACBEF24 /* Pods_RNBleMubarok_RNBleMubarokTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3292A385BCF4DA8387D50A5F /* Pods_RNBleMubarok_RNBleMubarokTests.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		958FD8E1521ACE12C3A717C0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		CE07C1072D3E13E5008981E2 /* BleModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07C1062D3E13E2008981E2 /* BleModule.swift */; };
+		CE92FE162D3F5D2F008EEC30 /* BleModule.m in Sources */ = {isa = PBXBuildFile; fileRef = CE92FE152D3F5D2F008EEC30 /* BleModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +40,16 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNBleMubarok/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNBleMubarok/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = RNBleMubarok/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNBleMubarok-RNBleMubarokTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNBleMubarok-RNBleMubarokTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3292A385BCF4DA8387D50A5F /* Pods_RNBleMubarok_RNBleMubarokTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNBleMubarok_RNBleMubarokTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-RNBleMubarok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBleMubarok.debug.xcconfig"; path = "Target Support Files/Pods-RNBleMubarok/Pods-RNBleMubarok.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-RNBleMubarok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBleMubarok.release.xcconfig"; path = "Target Support Files/Pods-RNBleMubarok/Pods-RNBleMubarok.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-RNBleMubarok-RNBleMubarokTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBleMubarok-RNBleMubarokTests.debug.xcconfig"; path = "Target Support Files/Pods-RNBleMubarok-RNBleMubarokTests/Pods-RNBleMubarok-RNBleMubarokTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-RNBleMubarok.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNBleMubarok.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75EB00EC92AB73DBED54FF6E /* Pods_RNBleMubarok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNBleMubarok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNBleMubarok/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RNBleMubarok-RNBleMubarokTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNBleMubarok-RNBleMubarokTests.release.xcconfig"; path = "Target Support Files/Pods-RNBleMubarok-RNBleMubarokTests/Pods-RNBleMubarok-RNBleMubarokTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE07C1062D3E13E2008981E2 /* BleModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleModule.swift; sourceTree = "<group>"; };
+		CE641DAF2D3DF6F100B5310F /* RNBleMubarok-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNBleMubarok-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE92FE152D3F5D2F008EEC30 /* BleModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BleModule.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -52,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-RNBleMubarok-RNBleMubarokTests.a in Frameworks */,
+				77C2E3A4620D6004EACBEF24 /* Pods_RNBleMubarok_RNBleMubarokTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-RNBleMubarok.a in Frameworks */,
+				552D76A28ED89FF2071D3BA6 /* Pods_RNBleMubarok.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +93,7 @@
 		13B07FAE1A68108700A75B9A /* RNBleMubarok */ = {
 			isa = PBXGroup;
 			children = (
+				CE07C1062D3E13E2008981E2 /* BleModule.swift */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -94,6 +101,8 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				CE641DAF2D3DF6F100B5310F /* RNBleMubarok-Bridging-Header.h */,
+				CE92FE152D3F5D2F008EEC30 /* BleModule.m */,
 			);
 			name = RNBleMubarok;
 			sourceTree = "<group>";
@@ -102,8 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-RNBleMubarok.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNBleMubarok-RNBleMubarokTests.a */,
+				75EB00EC92AB73DBED54FF6E /* Pods_RNBleMubarok.framework */,
+				3292A385BCF4DA8387D50A5F /* Pods_RNBleMubarok_RNBleMubarokTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,7 +217,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -245,6 +254,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				958FD8E1521ACE12C3A717C0 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +406,8 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				CE07C1072D3E13E5008981E2 /* BleModule.swift in Sources */,
+				CE92FE162D3F5D2F008EEC30 /* BleModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +480,82 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N994Y36237;
 				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DoubleConversion/DoubleConversion.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MultiplatformBleAdapter/MultiplatformBleAdapter.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCT-Folly/folly.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCTDeprecation/RCTDeprecation.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCTTypeSafety/RCTTypeSafety.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNCPushNotificationIOS/RNCPushNotificationIOS.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-CoreModules/CoreModules.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricComponents/React_FabricComponents.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricImage/React_FabricImage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-ImageManager/React_ImageManager.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Mapbuffer/React_Mapbuffer.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTAnimation/RCTAnimation.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTAppDelegate/React_RCTAppDelegate.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTBlob/RCTBlob.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTFabric/RCTFabric.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTImage/RCTImage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTLinking/RCTLinking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTNetwork/RCTNetwork.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTSettings/RCTSettings.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTText/RCTText.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTVibration/RCTVibration.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RuntimeApple/React_RuntimeApple.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RuntimeCore/React_RuntimeCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RuntimeHermes/React_RuntimeHermes.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/cxxreact.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-debug/React_debug.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-defaultsnativemodule/React_defaultsnativemodule.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-domnativemodule/React_domnativemodule.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-featureflags/React_featureflags.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-featureflagsnativemodule/React_featureflagsnativemodule.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-hermes/reacthermes.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-idlecallbacksnativemodule/idlecallbacksnativemodule.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jserrorhandler/React_jserrorhandler.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsi/jsi.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsiexecutor/jsireact.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsinspector/jsinspector_modern.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-logger/logger.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-microtasksnativemodule/React_microtasksnativemodule.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-nativeconfig/React_nativeconfig.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-perflogger/reactperflogger.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-performancetimeline/React_performancetimeline.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-rendererconsistency/React_rendererconsistency.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-rendererdebug/React_rendererdebug.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-runtimescheduler/React_runtimescheduler.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-utils/React_utils.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactCodegen/ReactCodegen.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket/SocketRocket.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Yoga/yoga.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/fmt/fmt.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/glog/glog.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-ble-plx/react_native_ble_plx.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/FBLazyVector\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTRequired\"",
+					"\"${PODS_ROOT}/Headers/Public/React-callinvoker\"",
+					"\"${PODS_ROOT}/Headers/Public/React-runtimeexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-timing\"",
+					"\"${PODS_ROOT}/Headers/Public/boost\"",
+					"\"${PODS_ROOT}/Headers/Public/hermes-engine\"",
+					"\"$(PODS_ROOT)/DoubleConversion\"",
+					"\"$(PODS_ROOT)/boost\"",
+					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
+					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
+					"\"$(PODS_ROOT)/Headers/Private/Yoga\"",
+					"$(SRCROOT)/../node_modules/react-native-push-notification/ios",
+				);
 				INFOPLIST_FILE = RNBleMubarok/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,8 +568,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rschooltoday.ActivityScheduler;
 				PRODUCT_NAME = RNBleMubarok;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNBleMubarok-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -496,6 +584,81 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N994Y36237;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DoubleConversion/DoubleConversion.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MultiplatformBleAdapter/MultiplatformBleAdapter.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCT-Folly/folly.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCTDeprecation/RCTDeprecation.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCTTypeSafety/RCTTypeSafety.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNCPushNotificationIOS/RNCPushNotificationIOS.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-CoreModules/CoreModules.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricComponents/React_FabricComponents.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-FabricImage/React_FabricImage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-ImageManager/React_ImageManager.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Mapbuffer/React_Mapbuffer.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTAnimation/RCTAnimation.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTAppDelegate/React_RCTAppDelegate.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTBlob/RCTBlob.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTFabric/RCTFabric.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTImage/RCTImage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTLinking/RCTLinking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTNetwork/RCTNetwork.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTSettings/RCTSettings.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTText/RCTText.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTVibration/RCTVibration.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RuntimeApple/React_RuntimeApple.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RuntimeCore/React_RuntimeCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RuntimeHermes/React_RuntimeHermes.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/cxxreact.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-debug/React_debug.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-defaultsnativemodule/React_defaultsnativemodule.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-domnativemodule/React_domnativemodule.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-featureflags/React_featureflags.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-featureflagsnativemodule/React_featureflagsnativemodule.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-hermes/reacthermes.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-idlecallbacksnativemodule/idlecallbacksnativemodule.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jserrorhandler/React_jserrorhandler.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsi/jsi.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsiexecutor/jsireact.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsinspector/jsinspector_modern.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-logger/logger.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-microtasksnativemodule/React_microtasksnativemodule.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-nativeconfig/React_nativeconfig.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-perflogger/reactperflogger.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-performancetimeline/React_performancetimeline.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-rendererconsistency/React_rendererconsistency.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-rendererdebug/React_rendererdebug.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-runtimescheduler/React_runtimescheduler.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-utils/React_utils.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactCodegen/ReactCodegen.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SocketRocket/SocketRocket.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Yoga/yoga.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/fmt/fmt.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/glog/glog.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/react-native-ble-plx/react_native_ble_plx.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/FBLazyVector\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTRequired\"",
+					"\"${PODS_ROOT}/Headers/Public/React-callinvoker\"",
+					"\"${PODS_ROOT}/Headers/Public/React-runtimeexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-timing\"",
+					"\"${PODS_ROOT}/Headers/Public/boost\"",
+					"\"${PODS_ROOT}/Headers/Public/hermes-engine\"",
+					"\"$(PODS_ROOT)/DoubleConversion\"",
+					"\"$(PODS_ROOT)/boost\"",
+					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
+					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
+					"\"$(PODS_ROOT)/Headers/Private/Yoga\"",
+					"\"$(SRCROOT)/../node_modules/react-native-push-notification/ios\"",
+				);
 				INFOPLIST_FILE = RNBleMubarok/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,8 +671,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rschooltoday.ActivityScheduler;
 				PRODUCT_NAME = RNBleMubarok;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNBleMubarok-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -564,6 +728,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -584,7 +759,14 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -630,6 +812,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -649,7 +842,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
